@@ -1240,7 +1240,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI()\norigins = [\"https://www.google.com\",\"https://www.youtube.com\",\"https://www.bing.com\"]\n# CORS - Cross Origin Resource Sharing\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)",
+        "peekOfCode": "app = FastAPI()\norigins = [\"*\"]\n# CORS - Cross Origin Resource Sharing\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)",
         "detail": "app.main",
         "documentation": {}
     },
@@ -1249,7 +1249,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "origins = [\"https://www.google.com\",\"https://www.youtube.com\",\"https://www.bing.com\"]\n# CORS - Cross Origin Resource Sharing\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n@app.get(\"/\")",
+        "peekOfCode": "origins = [\"*\"]\n# CORS - Cross Origin Resource Sharing\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=origins,\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n@app.get(\"/\")",
         "detail": "app.main",
         "documentation": {}
     },
